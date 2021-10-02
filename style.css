@@ -1,0 +1,81 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+background-image: url("./Media/starbg.gif");
+overflow: hidden;
+}
+
+h1 {
+color: wheat;
+font-size: 80px;
+text-align: center;
+padding-top: 5px;
+}
+
+h2 {
+color: wheat;
+font-size: 60px;
+text-align: center;
+padding-top: 5px;
+}   
+
+
+#gameContainer {
+width: 100vw;
+height: 85vh;
+display: flex;
+justify-content: center;
+position: relative;
+}
+
+#coin {
+cursor: pointer;
+position: absolute;
+margin-top: 15vh;
+position: absolute;
+border-radius: 50%;
+width: 10vw;
+height: 10vw;
+}
+
+#buttonContainer {
+position: absolute;
+margin-top: 50vh;
+}
+
+button {
+padding: 15px 30px 15px 30px ;
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.247);
+color: wheat;
+font-size: 50px;
+border-color: wheat;
+cursor: pointer;
+}
+
+@media screen and (max-width:450px) {
+
+#coin {
+width: 20vw;
+height: 20vw;
+}   
+
+h1 {
+font-size: 50px;
+padding-top: 30px;
+}
+
+h2 {
+font-size: 35px;
+}
+
+button {
+font-size: 30px;
+margin-top: 15vh;
+}
+
+}
