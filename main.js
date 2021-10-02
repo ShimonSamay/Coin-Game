@@ -26,7 +26,7 @@ scoreShow.innerText = "Good job !"
 scoreShow.style.marginTop = "40vh" ;
 }
 } , 700)
-})
+});
 
 coin.addEventListener("click" , ()=>{
 score++ ;
