@@ -8,7 +8,7 @@ let score = 0 ;
 
 gameBtn.addEventListener("click" , ()=>{
 gameBtn.style.display = "none" ;
-gameGoal.innerText = `${score}/10`
+gameGoal.innerText = `${score}/30`
 let gameId = setInterval(()=>{
 let randomPosition = Math.round(Math.random()*450);
 let anotherRandom =  Math.round(Math.random()*450);
@@ -18,19 +18,21 @@ coin.style.marginTop = `${randomPosition}px`
 coin.style.marginBottom = `${anotherRandom}px`
 coin.style.marginRight = `${anotherRandom}px`
 
-if (score == 10){
+if (score == 30){
 clearInterval(gameId);
 coin.style.display = "none";
 scoreShow.style.fontSize = "60px"
 scoreShow.innerText = "Good job !"
 scoreShow.style.marginTop = "40vh" ;
 }
-} , 800)
+} , 500)
 })
 
 coin.addEventListener("click" , ()=>{
 score++ ;
-gameGoal.innerText = `${score}/10`
+gameGoal.innerText = `${score}/30`
 scoreShow.innerText = `Score : ${score}`
 })
+
+
 
