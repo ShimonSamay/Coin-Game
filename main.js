@@ -25,7 +25,7 @@ scoreShow.style.fontSize = "60px"
 scoreShow.innerText = "Good job !"
 scoreShow.style.marginTop = "40vh" ;
 }
-} , 500)
+} , 700)
 })
 
 coin.addEventListener("click" , ()=>{
